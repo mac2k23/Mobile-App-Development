@@ -78,37 +78,43 @@ class Sample extends StatelessWidget {
                         width: 250,
                         height: 80,
                         child: Card(
-                          color: Colors.black.withOpacity(0.5),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'Fresh',
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.w400,
+                          // shape: RoundedRectangleBorder(
+                          //   borderRadius: BorderRadius.all(radius),
+                          // ),
+                          color: Colors.redAccent.withOpacity(0.5),
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 10,right: 10),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'Fresh',
+                                      style: TextStyle(
+                                        fontSize: 23,
+                                        fontWeight: FontWeight.w400,
+                                      ),
                                     ),
-                                  ),
-                                  Text(
-                                    'Potatoes',
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.w400,
+                                    Text(
+                                      'Potatoes',
+                                      style: TextStyle(
+                                        fontSize: 23,
+                                        fontWeight: FontWeight.w400,
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              ),
-                              Text(
-                                '100%',
-                                style: TextStyle(
-                                  fontSize: 50,
+                                  ],
                                 ),
-                              ),
-                            ],
+                                Text(
+                                  '100%',
+                                  style: TextStyle(
+                                    fontSize: 50,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),

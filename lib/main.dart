@@ -1,9 +1,29 @@
 import 'package:ammar/sample.dart';
+import 'package:ammar/first.dart';
+import 'package:ammar/second.dart';
 import 'package:flutter/material.dart';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 
 
 void main() {
-  runApp(const Sample());
+  runApp(const SplashScreen());
+}
+
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+    home: Scaffold(
+    body: AnimatedSplashScreen(
+      splash: 'assets/images/logo1.jpg',
+      nextScreen: Piqobe(),
+      splashTransition: SplashTransition.rotationTransition,
+    ),
+    ),
+    );
+  }
 }
 
 
