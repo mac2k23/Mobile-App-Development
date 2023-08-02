@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class Task extends StatelessWidget {
+class Task extends StatefulWidget {
   const Task({super.key});
+
+  @override
+  State<Task> createState() => _TaskState();
+}
+
+class _TaskState extends State<Task> {
+
+  int value=1;
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +48,12 @@ class Task extends StatelessWidget {
                       Container(
                         child: Row(
                           children: [
-                            InkWell( onTap: (){},
+                            InkWell( onTap: (){
+                              value--;
+                              setState(() {
+
+                              });
+                            },
                               child: Card(
                                 color: Color(0xffe2dcd7),
                                 elevation: 6.0,
@@ -64,7 +77,7 @@ class Task extends StatelessWidget {
                               width: 5,
                             ),
                             Text(
-                              '01',
+                              value.toString(),
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w500,
@@ -73,7 +86,12 @@ class Task extends StatelessWidget {
                             SizedBox(
                               width: 5,
                             ),
-                            InkWell( onTap: (){},
+                            InkWell( onTap: (){
+                              value++;
+                              setState(() {
+
+                              });
+                            },
                               child: Card(
                                 color: Color(0xffcd461d),
                                 elevation: 6.0,
@@ -360,7 +378,7 @@ class Task extends StatelessWidget {
                     ],
                   ),
                 ),
-                Lottie.asset('assets/animation/animation_lks46gn0.json'),
+                // Lottie.asset('assets/animation/animation_lks46gn0.json'),
               ],
             ),
           ),
