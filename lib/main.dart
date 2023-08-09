@@ -1,3 +1,5 @@
+import 'package:ammar/login_form.dart';
+import 'package:ammar/nutrition_design/nutrition_home.dart';
 import 'package:ammar/sample.dart';
 import 'package:ammar/first.dart';
 import 'package:ammar/second.dart';
@@ -18,7 +20,7 @@ class SplashScreen extends StatelessWidget {
     home: Scaffold(
     body: AnimatedSplashScreen(
       splash: 'assets/images/logo1.jpg',
-      nextScreen: Piqobe(),
+      nextScreen: LoginForm(),
       splashTransition: SplashTransition.rotationTransition,
     ),
     ),

@@ -174,7 +174,7 @@ class Piqobe extends StatelessWidget {
                                   border: Border.all(
                                       color: Colors.deepOrange,
                                       width: 2
-                                  )
+                                  ),
                               ),
                               width: 80,
                               height: 80,
@@ -202,38 +202,26 @@ class Piqobe extends StatelessWidget {
                     ],
                   ),
                 ),
-                Container(
-                  child: Column(
-                    children: [
-                      InkWell(
-                        onTap: (){},
-                        child: Container(
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(30),
-                              border: Border.all(
-                                  color: Colors.black26,
-                                  width: 20,
-                              )
-                          ),
-                          width: 300,
-                          height: 500,
-                          child: Stack(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(3),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(25),
-                                  child: InkWell(
-                                    child: Image.asset('assets/images/project_5.PNG'),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
+                Column(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(30),
+                          border: Border.all(
+                              color: Colors.black26,
+                              width: 18,
+                          )
+                      ),
+                      width: 350,
+                      height: 500,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(25),
+                        child: InkWell(
+                          child: Image.asset('assets/images/project_5.PNG'),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ],
             ),
